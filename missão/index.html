@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07110f">
+  <title>Missão Aura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="logo">Missão <span>Aura</span></p>
+    <p class="ano">PROGRAMA DE RECRUTAMENTO — 2089</p>
+  </header>
+
+  <main>
+    <section id="tela_inicial">
+
+      <p class="subtitulo">ARQUIVO DE EXPLORAÇÃO Nº 004</p>
+
+      <h1>Inscrição para a<br>missão de exploração</h1>
+
+      <p class="descricao">
+        A humanidade está preparando uma expedição para Aura.
+        Responda às perguntas para identificar a função mais
+        compatível com suas preferências e competências.
+      </p>
+
+      <form id="formulario">
+
+        <label for="nome">Nome do participante</label>
+        <input
+          type="text"
+          id="nome"
+          placeholder="Informe seu nome completo"
+          maxlength="100"
+          autocomplete="name"
+          required
+        >
+
+        <label for="nascimento">Data de nascimento</label>
+        <input
+          type="date"
+          id="nascimento"
+          required
+        >
+
+        <p class="pergunta">
+          01 — Diante de uma falha em um sistema essencial da nave,
+          qual seria sua prioridade?
+        </p>
+
+        <select id="resposta1" required>
+          <option value="">Selecione uma opção</option>
+          <option value="construcao">
+            Diagnosticar a falha e desenvolver uma solução técnica.
+          </option>
+          <option value="investigacao">
+            Investigar as causas e analisar os dados disponíveis.
+          </option>
+          <option value="exploracao">
+            Avaliar o ambiente em busca de rotas ou recursos alternativos.
+          </option>
+          <option value="planejamento">
+            Coordenar a equipe e definir um plano de ação.
+          </option>
+        </select>
+
+        <p class="pergunta">
+          02 — Qual responsabilidade considera mais importante
+          durante a exploração de Aura?
+        </p>
+
+        <select id="resposta2" required>
+          <option value="">Selecione uma opção</option>
+          <option value="construcao">
+            Garantir a integridade dos equipamentos e sistemas.
+          </option>
+          <option value="investigacao">
+            Investigar as características ambientais e científicas do planeta.
+          </option>
+          <option value="exploracao">
+            Reconhecer o território e identificar possíveis áreas de interesse.
+          </option>
+          <option value="planejamento">
+            Organizar os recursos e coordenar as operações da equipe.
+          </option>
+        </select>
+
+        <p class="pergunta">
+          03 — Ao identificar uma anomalia desconhecida durante
+          a missão, como procederia?
+        </p>
+
+        <select id="resposta3" required>
+          <option value="">Selecione uma opção</option>
+          <option value="construcao">
+            Verificaria os equipamentos envolvidos e buscaria uma solução técnica.
+          </option>
+          <option value="investigacao">
+            Coletaria evidências e formularia hipóteses com base nos dados.
+          </option>
+          <option value="exploracao">
+            Investigaria a região para identificar possíveis riscos e alternativas.
+          </option>
+          <option value="planejamento">
+            Avaliaria os riscos e organizaria a resposta da equipe.
+          </option>
+        </select>
+
+        <p class="pergunta">
+          04 — Qual atividade melhor corresponde às suas
+          principais competências?
+        </p>
+
+        <select id="resposta4" required>
+          <option value="">Selecione uma opção</option>
+          <option value="construcao">
+            Construção, manutenção e resolução de problemas técnicos.
+          </option>
+          <option value="investigacao">
+            Pesquisa, análise de dados e investigação científica.
+          </option>
+          <option value="exploracao">
+            Orientação, reconhecimento territorial e adaptação a ambientes desconhecidos.
+          </option>
+          <option value="planejamento">
+            Planejamento, gestão de recursos e tomada de decisões.
+          </option>
+        </select>
+
+        <button type="button" id="descobrir">
+          ANALISAR PERFIL ↗
+        </button>
+
+      </form>
+
+      <p id="essência">
+        MISSÃO AURA // SISTEMA DE RECRUTAMENTO PLANETÁRIO
+      </p>
+
+    </section>
+
+    <section id="resultado" class="escondido">
+
+      <p class="subtitulo">RELATÓRIO DE COMPATIBILIDADE</p>
+
+      <h1 id="titulo_resultado">Relatório do participante</h1>
+
+      <p id="categoria_resultado"></p>
+
+      <p id="mensagem_resultado"></p>
+
+      <div class="cartao_resultado">
+
+        <div class="imagem_perfil" id="imagem_perfil">
+          <span id="numero_perfil">01</span>
+        </div>
+
+        <div class="informacoes_perfil">
+
+          <p class="subtitulo">FUNÇÃO RECOMENDADA</p>
+
+          <h2 id="nome_perfil"></h2>
+
+          <p id="descricao_perfil"></p>
+
+          <p id="missao_perfil"></p>
+
+        </div>
+
+      </div>
+
+      <p id="idade_resultado"></p>
+
+      <button type="button" id="refazer">-refaça-</button>
+
+      <p id="essência_resultado">
+        MISSÃO AURA // FIM DO RELATÓRIO
+      </p>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
